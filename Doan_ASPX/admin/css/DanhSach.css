@@ -1,0 +1,32 @@
+﻿/*//////// Css Load Member ///*/
+
+table.tbDanhSach {
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 1px #dfdfdf
+}
+
+table.tbDanhSach th,
+table.tbDanhSach td {
+    border: solid 1px #dfdfdf;
+    padding: 5px
+}
+
+table.tbDanhSach .cotUs{
+    width:200px;
+}
+table.tbDanhSach .cotEmail{
+    width:200px
+}
+table.tbDanhSach .cotName{
+    width:200px
+}
+table.tbDanhSach .cotPhone{
+    width:200px
+}
+table.tbDanhSach .cotRole {
+    width: 45px
+}
+table.tbDanhSach .cotStatus{
+    width:45px
+}
