@@ -16,3 +16,9 @@ E:\3\ASPX\Doan_ASPX\Doan_ASPX\obj\Debug\Doan_ASPX.pdb
 E:\3\ASPX\Doan_ASPX\Doan_ASPX\bin\Doan_ASPX.dll.config
 E:\3\ASPX\Doan_ASPX\Doan_ASPX\bin\Doan_ASPX.dll
 E:\3\ASPX\Doan_ASPX\Doan_ASPX\bin\Doan_ASPX.pdb
+C:\Users\ADMIN\Desktop\WebSalesFoodASPX\Doan_ASPX\bin\Doan_ASPX.dll.config
+C:\Users\ADMIN\Desktop\WebSalesFoodASPX\Doan_ASPX\bin\Doan_ASPX.dll
+C:\Users\ADMIN\Desktop\WebSalesFoodASPX\Doan_ASPX\bin\Doan_ASPX.pdb
+C:\Users\ADMIN\Desktop\WebSalesFoodASPX\Doan_ASPX\obj\Debug\Doan_ASPX.csprojAssemblyReference.cache
+C:\Users\ADMIN\Desktop\WebSalesFoodASPX\Doan_ASPX\obj\Debug\Doan_ASPX.dll
+C:\Users\ADMIN\Desktop\WebSalesFoodASPX\Doan_ASPX\obj\Debug\Doan_ASPX.pdb
