@@ -83,28 +83,6 @@ namespace Doan_ASPX.HtppCode
             }
         }
 
-        public static bool ReadDataTable(string sQuerry)
-        {
-            try
-            {
-                Connect();
-                SqlCommand cm = new SqlCommand(sQuerry,conn);
-
-                SqlDataReader rd = cm.ExecuteReader();
-
-                if (rd.HasRows)
-                {
-                    return true;
-                }
-                else return false;
-
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
         public static void excute(string sQuerry)
         {
             Connect();

@@ -14,10 +14,6 @@ namespace Doan_ASPX.admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Session["Login"] != null)
-            {
-                Response.Redirect("Member.aspx");
-            }
         }
 
         protected void login_Click(object sender, EventArgs e)
@@ -29,10 +25,17 @@ namespace Doan_ASPX.admin
             SqlCommand cmd = new SqlCommand("Select * from[Doan_ASPX].[dbo].[member] where email = '"+ txtEmail.Text +"' and pass = '" + txtPass.Text + "' ",con);
             da.SelectCommand = cmd;
             da.Fill(ds, "member");
-            if(ds.Tables[0].Rows.Count > 0)
+            if (ds.Tables[0].Rows.Count > 0)
             {
-                Session["Login"] = txtEmail.Text;
-                Response.Redirect("Member.aspx");
+                string Name = "";
+                string getName = "Select username from[Doan_ASPX].[dbo].[member] where email = '" + txtEmail.Text + "'";
+                DataTable dt = DataProviders.getDataTable(getName);
+                foreach (DataRow row in dt.Rows)
+                {
+                    Name = row["username"].ToString();
+                }
+                Session["User"] = Name;
+                Response.Redirect("~/admin/Member.aspx");
             }
             else
             {

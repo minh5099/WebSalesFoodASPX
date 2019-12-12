@@ -33,24 +33,6 @@ namespace Doan_ASPX.admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Type;
 
         /// <summary>
-        /// typePost control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList typePost;
-
-        /// <summary>
-        /// imgUpload control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload imgUpload;
-
-        /// <summary>
         /// userName control.
         /// </summary>
         /// <remarks>
@@ -76,6 +58,42 @@ namespace Doan_ASPX.admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList Status;
+
+        /// <summary>
+        /// typePost control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList typePost;
+
+        /// <summary>
+        /// rfvLoaiBaiPost control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvLoaiBaiPost;
+
+        /// <summary>
+        /// fulIg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image fulIg;
+
+        /// <summary>
+        /// imgUpload control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload imgUpload;
 
         /// <summary>
         /// btnLoai control.

@@ -80,6 +80,7 @@
     <Content Include="admin\FoodType.aspx" />
     <Content Include="admin\img\bg-01.jpg" />
     <Content Include="admin\img\icons\favicon.ico" />
+    <Content Include="admin\js\jquery-3.4.1.min.js" />
     <Content Include="admin\js\main.js" />
     <Content Include="admin\Login.aspx" />
     <Content Include="admin\vendor\animate\animate.css" />

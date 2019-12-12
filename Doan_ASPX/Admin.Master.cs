@@ -11,10 +11,16 @@ namespace Doan_ASPX
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Session["Login"]!=null)
+            if (Session["User"] != null)
             {
-                lblUser.Text = Session["Login"].ToString();
+                lblUser.Text = Session["User"].ToString();
             }
+        }
+
+        protected void btnLogout_Onclick(object sender, EventArgs e)
+        {
+            Session.Remove("User");
+            Response.Redirect("~/admin/Login.aspx");
         }
     }
 }

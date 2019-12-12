@@ -42,24 +42,6 @@ namespace Doan_ASPX.admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_username;
 
         /// <summary>
-        /// MTa control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox MTa;
-
-        /// <summary>
-        /// rfv_Name control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Name;
-
-        /// <summary>
         /// Price control.
         /// </summary>
         /// <remarks>
@@ -76,42 +58,6 @@ namespace Doan_ASPX.admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Email;
-
-        /// <summary>
-        /// Price_promo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Price_promo;
-
-        /// <summary>
-        /// rfv_Pass control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Pass;
-
-        /// <summary>
-        /// fulThumb control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fulThumb;
-
-        /// <summary>
-        /// fulImg control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fulImg;
 
         /// <summary>
         /// Unit control.
@@ -132,33 +78,6 @@ namespace Doan_ASPX.admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Unit;
 
         /// <summary>
-        /// Percent_Promo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Percent_Promo;
-
-        /// <summary>
-        /// rfv_Percent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Percent;
-
-        /// <summary>
-        /// DanhGia control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DanhGia;
-
-        /// <summary>
         /// Sold control.
         /// </summary>
         /// <remarks>
@@ -175,6 +94,42 @@ namespace Doan_ASPX.admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Sold;
+
+        /// <summary>
+        /// Price_promo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Price_promo;
+
+        /// <summary>
+        /// rfv_Pass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Pass;
+
+        /// <summary>
+        /// Percent_Promo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Percent_Promo;
+
+        /// <summary>
+        /// rfv_Percent control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Percent;
 
         /// <summary>
         /// Point control.
@@ -195,15 +150,6 @@ namespace Doan_ASPX.admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Point;
 
         /// <summary>
-        /// drl_loai control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList drl_loai;
-
-        /// <summary>
         /// drl_Active control.
         /// </summary>
         /// <remarks>
@@ -213,6 +159,78 @@ namespace Doan_ASPX.admin
         protected global::System.Web.UI.WebControls.DropDownList drl_Active;
 
         /// <summary>
+        /// drl_loai control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList drl_loai;
+
+        /// <summary>
+        /// DanhGia control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DanhGia;
+
+        /// <summary>
+        /// MTa control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox MTa;
+
+        /// <summary>
+        /// rfv_Name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Name;
+
+        /// <summary>
+        /// thumbImg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image thumbImg;
+
+        /// <summary>
+        /// fulThumb control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fulThumb;
+
+        /// <summary>
+        /// fulIg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image fulIg;
+
+        /// <summary>
+        /// fulImg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fulImg;
+
+        /// <summary>
         /// btnTaoSP control.
         /// </summary>
         /// <remarks>
@@ -220,5 +238,14 @@ namespace Doan_ASPX.admin
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnTaoSP;
+
+        /// <summary>
+        /// btnUpdate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnUpdate;
     }
 }

@@ -14,7 +14,10 @@ namespace Doan_ASPX.admin
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //if (Session["User"] == null)
+            //{
+            //    Response.Redirect("~/admin/Login.aspx");
+            //}
         }
 
         protected void btnTaoSP_Click(object sender, EventArgs e)
@@ -39,6 +42,11 @@ namespace Doan_ASPX.admin
 
             Foods fd = new Foods(Name, Des, price, price_promo, Thumb, ch, unit, percent_promo, rating, sold, point, type, status);
             fd.adFood();
+        }
+
+        protected void btnUpdate_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
