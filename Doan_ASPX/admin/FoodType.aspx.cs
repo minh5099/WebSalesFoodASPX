@@ -18,7 +18,7 @@ namespace Doan_ASPX.admin
         protected void btnLoai_Click(object sender, EventArgs e)
         {
             string path = Server.MapPath("~/admin/img/" + imgUpload.FileName);
-            string ch = "~/admin/img/" + imgUpload.FileName;
+            string ch = "img/" + imgUpload.FileName;
             imgUpload.SaveAs(path);
 
             string tpName = typeName.Text;
@@ -27,8 +27,19 @@ namespace Doan_ASPX.admin
             string usName = userName.Text;
 
             food_types fdType = new food_types(tpName, tpPost, ch, status, usName);
-
-            fdType.addFoodType();
+          
+            if (fdType.addFoodType() == true)
+            {
+                //lblmodal.Text = "Thêm thành công";
+                //ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Thêm Thành Công')", true);
+            }
+            else
+            {
+                //lblmodal.Text = "Thêm Thất Bại";
+                //ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Thêm Thất Bại)", true);
+            }
         }
     }
 }

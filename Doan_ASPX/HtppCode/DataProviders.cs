@@ -83,11 +83,10 @@ namespace Doan_ASPX.HtppCode
             }
         }
 
-        public static void excute(string sQuerry)
+        public static SqlDataAdapter getDa(string squerry)
         {
-            Connect();
-            SqlCommand cmdn = new SqlCommand(sQuerry, conn);
-            cmdn.ExecuteNonQuery();
+            SqlDataAdapter da = new SqlDataAdapter(squerry, conn);
+            return da;
         }
 
     }

@@ -10,39 +10,38 @@
               </div>
                 <div class="form-group row">
                   <div class="col-lg-4 col-sm-6 mb-3 mb-sm-0">
-                    <asp:TextBox runat="server" CssClass="form-control form-control-user" ID="TenSP"
+                    <asp:TextBox runat="server" CssClass="form-control form-control-user" ID="txtTenSP"
                         placeholder="Tên Sản Phẩm"></asp:TextBox>
-                      <asp:Label CssClass="text-danger" Visible="false" runat="server" ID="lblUs">Tên Sản Phẩm</asp:Label>
-                      <asp:RequiredFieldValidator ID="rfv_username" runat="server" ErrorMessage="Tên Sản Phẩm Ko Được Để Trống" ControlToValidate="TenSP" ValidationGroup="vdgFood"></asp:RequiredFieldValidator>
+                      <asp:RequiredFieldValidator ID="rfv_username" runat="server" ErrorMessage="Tên Sản Phẩm Ko Được Để Trống" ControlToValidate="txtTenSP" ValidationGroup="vdgFood"></asp:RequiredFieldValidator>
                   </div> 
                    <div class="col-lg-4 col-sm-6">
-                       <asp:TextBox runat="server" CssClass="form-control form-control-user" ID="Price"
-                         TextMode="Number" placeholder="Price"></asp:TextBox>
-                       <asp:RequiredFieldValidator ID="rfv_Email" runat="server" ErrorMessage="Email Can Not Empty" ControlToValidate="Price" ValidationGroup="vdgFood"></asp:RequiredFieldValidator>
+                       <asp:TextBox runat="server" CssClass="form-control form-control-user" ID="txtPrice"
+                         TextMode="Number" placeholder="Price" ></asp:TextBox>
+                       <asp:RequiredFieldValidator ID="rfv_Email" runat="server" ErrorMessage="Email Can Not Empty" ControlToValidate="txtPrice" ValidationGroup="vdgFood"></asp:RequiredFieldValidator>
                    </div>
                    <div class="col-lg-4 col-sm-6">
-                        <asp:TextBox runat="server" CssClass="form-control form-control-user" ID="Unit" placeholder="Đơn Vị Tính"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfv_Unit" runat="server" ErrorMessage="Đơn Vị Tính Ko Được Để Trống" ControlToValidate="Unit" ValidationGroup="vdgFood" ></asp:RequiredFieldValidator>
+                        <asp:TextBox runat="server" CssClass="form-control form-control-user" ID="txtUnit" placeholder="Đơn Vị Tính"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfv_Unit" runat="server" ErrorMessage="Đơn Vị Tính Ko Được Để Trống" ControlToValidate="txtUnit" ValidationGroup="vdgFood" ></asp:RequiredFieldValidator>
                    </div>
                 </div>
                 <div class="form-group row">
                   <div class="col-lg-4 col-sm-6">
-                        <asp:TextBox runat="server" CssClass="form-control form-control-user" ID="Sold" placeholder="Sold" TextMode="Number"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfv_Sold" runat="server" ErrorMessage="Not Null" ControlToValidate="Sold" ValidationGroup="vdgFood" ></asp:RequiredFieldValidator>
+                        <asp:TextBox runat="server" CssClass="form-control form-control-user" ID="txtSold" placeholder="Sold" TextMode="Number"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfv_Sold" runat="server" ErrorMessage="Not Null" ControlToValidate="txtSold" ValidationGroup="vdgFood" ></asp:RequiredFieldValidator>
                   </div>
                   <div class="col-lg-4 col-sm-6 mb-sm-0">
-                        <asp:TextBox runat="server" CssClass="form-control form-control-user" ID="Price_promo" placeholder="Khuyến Mãi" ></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfv_Pass" runat="server" ErrorMessage="Khuyến Mãi" ControlToValidate="Price_promo" ValidationGroup="vdgFood" ></asp:RequiredFieldValidator>
+                        <asp:TextBox runat="server" CssClass="form-control form-control-user" ID="txtPrice_promo" placeholder="Khuyến Mãi" ></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfv_Pass" runat="server" ErrorMessage="Khuyến Mãi" ControlToValidate="txtPrice_promo" ValidationGroup="vdgFood" ></asp:RequiredFieldValidator>
                   </div>
                   <div class="col-lg-4 col-sm-6">
-                        <asp:TextBox runat="server" CssClass="form-control form-control-user" ID="Percent_Promo" placeholder="Phần Trăm Khuyến Mãi"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfv_Percent" runat="server" ErrorMessage="Not Null" ControlToValidate="Percent_Promo" ValidationGroup="vdgFood" ></asp:RequiredFieldValidator>
+                        <asp:TextBox runat="server" CssClass="form-control form-control-user" ID="txtPercent_Promo" placeholder="Phần Trăm Khuyến Mãi"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfv_Percent" runat="server" ErrorMessage="Not Null" ControlToValidate="txtPercent_Promo" ValidationGroup="vdgFood" ></asp:RequiredFieldValidator>
                   </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-lg-4 col-sm-6">
-                        <asp:TextBox runat="server" CssClass="form-control form-control-user" ID="Point" placeholder="Điểm Sản Phẩm"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rfv_Point" runat="server" ErrorMessage="Not Null" ControlToValidate="Point"  ValidationGroup="vdgFood"></asp:RequiredFieldValidator>
+                        <asp:TextBox runat="server" CssClass="form-control form-control-user" ID="txtPoint" placeholder="Điểm Sản Phẩm"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rfv_Point" runat="server" ErrorMessage="Not Null" ControlToValidate="txtPoint"  ValidationGroup="vdgFood"></asp:RequiredFieldValidator>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <asp:DropDownList runat="server" ID="drl_Active" class="col-lg-12 form-control form-control-user">
@@ -52,11 +51,6 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <asp:DropDownList runat="server" ID="drl_loai" class="col-lg-12 form-control form-control-user" >
-                            <asp:ListItem Selected="True" Text="Loại 1" Value="1"></asp:ListItem>
-                            <asp:ListItem Text="Loại 2" Value="2"></asp:ListItem>
-                            <asp:ListItem Text="Loại 3" Value="3"></asp:ListItem>
-                            <asp:ListItem Text="Loại 4" Value="4"></asp:ListItem>
-                            <asp:ListItem Text="Loại 5" Value="5"></asp:ListItem>
                         </asp:DropDownList>
                     </div>
                 </div>
@@ -91,10 +85,34 @@
                   Register Account
                 </a>--%>
                 <asp:Button runat="server" CssClass="btn btn-primary btn-user btn-block" ID="btnTaoSP" Text="Thêm Sản Phẩm Mới" OnClick="btnTaoSP_Click" ValidationGroup="vdgFood" />
-                <asp:Button runat="server" CssClass="btn btn-primary btn-user btn-block" ID="btnUpdate" Text="Thêm Sản Phẩm Mới" OnClick="btnUpdate_Click" ValidationGroup="vdgFood" Visible="false" />
+                <asp:Button runat="server" CssClass="btn btn-primary btn-user btn-block" ID="btnUpdate" Text="Cập Nhật Sản Phẩm " OnClick="btnUpdate_Click" Visible="false" />
             </div>
           </div>
     </div>
+   <%-- <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Thông Báo</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <asp:Label ID="lblmodal" runat="server" Text=""></asp:Label>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <%--<button type="button" id="myButton" class="btn btn-danger" data-dismiss="modal">OK</button>
+                   <asp:Button ID="myButton" runat="server" CssClass="btn btn-danger" Text="OK" data-dismiss="modal" />
+                    <asp:Button ID="Button" runat="server" CssClass="btn btn-danger" Visible="false" Text="OK" data-dismiss="modal" />
+                </div>
+            </div>
+        </div>
+    </div>--%>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Script" runat="server">
     <script type="text/javascript">
@@ -120,5 +138,18 @@
                 reader.readAsDataURL(input.files[0]);
             }
         }
+        //function openModal() {
+        //    $('#myModal').modal('show');
+        //    $(document).ready(function () {
+        //        $("#ctp_container_myButton").click(function () {
+        //            window.location.href = "FoodLists.aspx";
+        //        });
+        //    });
+        //    $(document).ready(function () {
+        //        $("#ctp_container_Button").click(function () {
+        //            window.location.href = "Food.aspx";
+        //        });
+        //    });
+        //}
     </script>
 </asp:Content>

@@ -15,59 +15,14 @@ namespace Doan_ASPX.admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["User"] == null)
+            //if (Session["User"] == null)
+            //{
+            //    Response.Redirect("Login.aspx");
+            //}
+            if(!IsPostBack)
             {
-                Response.Redirect("Login.aspx");
-            }
-            SqlConnection conn = new SqlConnection(@"Data Source=desktop-ttj28qj\mysql;Initial Catalog=Doan_ASPX;Integrated Security=True");
-            string qrry = "SELECT * FROM [dbo].[member]";
-            if (Request["username"] != "" && Request["chucnang"] == "update")
-            {
-                string ten = Request.QueryString["username"];
-                string sQuerry = "SELECT * FROM [dbo].[member] where username = '" + ten + "'";
-                DataTable dt = DataProviders.getDataTable(sQuerry);
-                binding(dt);
-                btnUpdate.Visible = true;
-                btnRegister.Visible = false;
-            }
-            if (Request["key"] != null)
-            {
-                qrry = qrry + " where name like '%" + Request["key"].ToString() + "%'";
-            }
-            SqlDataAdapter da = new SqlDataAdapter(qrry, conn);
-            DataTable dtTable = new DataTable();
-            da.Fill(dtTable);
-            int so_item_1trang = 10;
-            int sotrang = dtTable.Rows.Count / so_item_1trang + (dtTable.Rows.Count % so_item_1trang == 0 ? 0 : 1);
-            int page = Request["page"] == null ? 1 : Convert.ToInt32(Request["page"]);
-
-            int from = (page - 1) * 10;
-            int to = page * 10 - 1;
-            for (int i = dtTable.Rows.Count - 1; i >= 0; i--)
-            {
-                if (i < from || i > to)
-                {
-                    dtTable.Rows.RemoveAt(i);
-                }
-            }
-            rptListMember.DataSource = dtTable;
-            rptListMember.DataBind();
-            DataTable dtPage = new DataTable();
-            dtPage.Columns.Add("index");
-            dtPage.Columns.Add("active");
-            for (int i = 1; i <= sotrang; i++)
-            {
-                DataRow dr = dtPage.NewRow();
-                dr["index"] = i;
-
-                if ((Request["page"] == null && i == 1) || (Request["page"] != null && Convert.ToInt32(Request["page"]) == i))
-                    dr["active"] = 1;
-                else
-                    dr["active"] = 0;
-                dtPage.Rows.Add(dr);
-            }
-            Repeater2.DataSource = dtPage;
-            Repeater2.DataBind();
+                LoadingPage();
+            }     
         }
 
         //Binding Data
@@ -108,16 +63,19 @@ namespace Doan_ASPX.admin
             //int Status = (rad.Check?1:0); doi vs RadioButton
 
             Account acc = new Account(sUsername, sEmail, sPass, sName, sPhone, sRole, sStatus);
-            if (acc.adMember() == false)
+            if (acc.adMember() == true)
             {
-                lblUs.Visible = true;
+                //lblmodal.Text = "Thêm thành công";
+                //ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Thêm Thành Công')", true);
+
             }
             else
             {
-                lblUs.Visible = false;
-                LoadingPage();
+                //lblmodal.Text = "Thêm Thất Bại";
+                //ScriptManager.RegisterStartupScript(this, this.GetType(), "Pop", "openModal();", true);
+                ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Thêm Thất Bại')", true);
             }
-            
             //string sQuerry = "Select* from[Doan_ASPX].[dbo].[member] where username = @username";
 
             //SqlParameter[] paras = new SqlParameter[1];

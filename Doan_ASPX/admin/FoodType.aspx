@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="FoodType.aspx.cs" Inherits="Doan_ASPX.admin.FoodType" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head_Css" runat="server">
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js' type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Main_Code" runat="server">
      <div class="row" >
@@ -37,9 +40,9 @@
                           </asp:DropDownList>
                           <asp:RequiredFieldValidator runat="server" ID="rfvLoaiBaiPost" ErrorMessage="Chưa Chọn Loại Bài Post" ControlToValidate="typePost" InitialValue="Chọn Loại Bài Post"></asp:RequiredFieldValidator>
                         </div>                   
-                        <div class="col-lg-4 col-sm-6">   
-                            <asp:Image runat="server" ID="fulIg"/>
-                            <asp:FileUpload ID="imgUpload" runat="server" onchange="ImagePreview" />
+                        <div class="col-lg-8 col-sm-6">   
+                            <asp:Image runat="server" ID="fulIg" AlternateText="Image"/>
+                            <asp:FileUpload ID="imgUpload" runat="server" onchange="ImagePreview(this)" />
                       </div>
                 </div>
                 <%--<a href="login.html" class="btn btn-primary btn-user btn-block">
@@ -49,6 +52,30 @@
             </div>
           </div>
     </div>
+    <%--<div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Thông Báo</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <asp:Label ID="lblmodal" runat="server" Text=""></asp:Label>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <%--<button type="button" id="myButton" class="btn btn-danger" data-dismiss="modal">OK</button>
+                    <asp:Button ID="myButton" runat="server" CssClass="btn btn-danger" Text="OK" data-dismiss="modal" />
+                    <asp:Button ID="Button" runat="server" CssClass="btn btn-danger" Visible="false" Text="OK" data-dismiss="modal" />
+                </div>
+            </div>
+        </div>
+    </div>--%>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Script" runat="server">
     <script type="text/javascript">
@@ -62,6 +89,21 @@
                 };
                 reader.readAsDataURL(input.files[0]);
             }
+        };
+        <%--function openModal() {
+            $('document').ready(function () {
+                jQuery('#myModal').modal('show');
+            });
         }
+        $(document).ready(function () {
+            $("#myButton").click(function () {
+                window.location.href = "FoodLists.aspx";
+            });
+        });
+        $(document).ready(function () {
+            $("#Button").click(function () {
+                window.location.href = "Food.aspx";
+            });
+        });--%>
     </script>
 </asp:Content>

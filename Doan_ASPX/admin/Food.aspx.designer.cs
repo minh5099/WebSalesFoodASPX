@@ -15,22 +15,13 @@ namespace Doan_ASPX.admin
     {
 
         /// <summary>
-        /// TenSP control.
+        /// txtTenSP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TenSP;
-
-        /// <summary>
-        /// lblUs control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUs;
+        protected global::System.Web.UI.WebControls.TextBox txtTenSP;
 
         /// <summary>
         /// rfv_username control.
@@ -42,13 +33,13 @@ namespace Doan_ASPX.admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_username;
 
         /// <summary>
-        /// Price control.
+        /// txtPrice control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Price;
+        protected global::System.Web.UI.WebControls.TextBox txtPrice;
 
         /// <summary>
         /// rfv_Email control.
@@ -60,13 +51,13 @@ namespace Doan_ASPX.admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Email;
 
         /// <summary>
-        /// Unit control.
+        /// txtUnit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Unit;
+        protected global::System.Web.UI.WebControls.TextBox txtUnit;
 
         /// <summary>
         /// rfv_Unit control.
@@ -78,13 +69,13 @@ namespace Doan_ASPX.admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Unit;
 
         /// <summary>
-        /// Sold control.
+        /// txtSold control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Sold;
+        protected global::System.Web.UI.WebControls.TextBox txtSold;
 
         /// <summary>
         /// rfv_Sold control.
@@ -96,13 +87,13 @@ namespace Doan_ASPX.admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Sold;
 
         /// <summary>
-        /// Price_promo control.
+        /// txtPrice_promo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Price_promo;
+        protected global::System.Web.UI.WebControls.TextBox txtPrice_promo;
 
         /// <summary>
         /// rfv_Pass control.
@@ -114,13 +105,13 @@ namespace Doan_ASPX.admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Pass;
 
         /// <summary>
-        /// Percent_Promo control.
+        /// txtPercent_Promo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Percent_Promo;
+        protected global::System.Web.UI.WebControls.TextBox txtPercent_Promo;
 
         /// <summary>
         /// rfv_Percent control.
@@ -132,13 +123,13 @@ namespace Doan_ASPX.admin
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv_Percent;
 
         /// <summary>
-        /// Point control.
+        /// txtPoint control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Point;
+        protected global::System.Web.UI.WebControls.TextBox txtPoint;
 
         /// <summary>
         /// rfv_Point control.
